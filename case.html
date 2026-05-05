@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品案例 - littleliu | IT科技爱好者</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;font-family: "Microsoft Yahei", sans-serif;}
+        header {background-color: #222;color: white;padding: 15px 20px;display: flex;justify-content: space-between;align-items: center;position: sticky;top: 0;z-index: 99;}
+        .logo {font-size: 24px;font-weight: bold;}
+        nav a {color: white;text-decoration: none;margin-left: 20px;font-size: 16px;}
+        nav a:hover {color: #409eff;}
+        nav a.active {color: #409eff;}
+        .container {width: 90%;max-width: 1200px;margin: 80px auto;}
+        .title {text-align: center;font-size: 32px;margin-bottom: 40px;color: #333;}
+        .case-item {background: #f8f9fa;padding: 25px;border-radius: 10px;margin-bottom: 20px; border-left: 4px solid #409eff;}
+        .case-item h3 {margin-bottom: 10px;color: #222;}
+        .case-item p {color: #666; line-height: 1.6;}
+        footer {background-color: #222;color: #aaa;text-align: center;padding: 30px 0;margin-top: 50px;}
+
+        @media(max-width:768px){
+            header{flex-direction:column;gap:10px;}
+            nav{margin-top:10px;}
+            nav a{margin:0 8px;font-size:14px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">littleliu</div>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="about.html">关于我</a>
+            <a href="service.html">分享项目</a>
+            <a href="case.html" class="active">作品案例</a>
+            <a href="contact.html">联系我</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2 class="title">个人学习作品</h2>
+        <div class="case-item">
+            <h3>个人响应式官网</h3>
+            <p>纯HTML+CSS制作的个人展示网站，包含多页面跳转、导航、响应式适配，用于学习与展示</p>
+        </div>
+        <div class="case-item">
+            <h3>静态主题页面</h3>
+            <p>根据兴趣制作的主题单页，练习布局、配色、样式美化，提升前端基础能力</p>
+        </div>
+        <div class="case-item">
+            <h3>系统工具整理笔记</h3>
+            <p>整理CMD常用指令、系统设置技巧、软件使用教程，方便自己查阅，也分享给有需要的朋友</p>
+        </div>
+        <div class="case-item">
+            <h3>硬件知识科普文档</h3>
+            <p>整理CPU、内存、显卡等硬件基础知识，用通俗语言科普，加深自己理解</p>
+        </div>
+    </div>
+    <footer>
+        <p style="margin-bottom:10px;">本网站由 Cloudflare 提供保护与支持</p>
+        <p>© 2026 littleliu | IT科技爱好者 版权所有</p>
+    </footer>
+</body>
+</html>
