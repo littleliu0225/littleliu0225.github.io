@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>littleliu - IT科技爱好者</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;font-family: "Microsoft Yahei", sans-serif;}
+        header {background-color: #222;color: white;padding: 15px 20px;display: flex;justify-content: space-between;align-items: center;position: sticky;top: 0;z-index: 99;}
+        .logo {font-size: 24px;font-weight: bold;}
+        nav a {color: white;text-decoration: none;margin-left: 20px;font-size: 16px;}
+        nav a:hover {color: #409eff;}
+        nav a.active {color: #409eff;}
+        .banner {background: linear-gradient(135deg, #409eff, #3771c8);height: 320px;color: white;display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: center;padding: 20px;}
+        .banner h1 {font-size: 36px;margin-bottom: 15px;}
+        .banner p {font-size: 16px;max-width: 600px;}
+        .container {width: 90%;max-width: 1200px;margin: 60px auto;}
+        .title {text-align: center;font-size: 32px;margin-bottom: 40px;color: #333;}
+        footer {background-color: #222;color: #aaa;text-align: center;padding: 30px 0;margin-top: 50px;}
+
+        /* 响应式适配 */
+        @media(max-width:768px){
+            header{flex-direction:column;text-align:center;gap:10px;}
+            nav{margin-top:10px;}
+            nav a{margin:0 8px;font-size:14px;}
+            .banner h1{font-size:28px;}
+            .banner{height:260px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">littleliu</div>
+        <nav>
+            <a href="index.html" class="active">首页</a>
+            <a href="about.html">关于我</a>
+            <a href="service.html">分享项目</a>
+            <a href="case.html">作品案例</a>
+            <a href="contact.html">联系我</a>
+        </nav>
+    </header>
+    <section class="banner">
+        <h1>你好，我是 IT科技爱好者</h1>
+        <p>热爱网页开发、软硬件探索、科技知识分享，专注记录与分享技术成长之路</p>
+    </section>
+    <div class="container">
+        <h2 class="title">网站简介</h2>
+        <p style="text-align: center; color: #666; font-size: 18px; line-height: 2;">
+            这里是littleliu的个人小站，专注分享前端网页、电脑硬件、系统工具、网络知识等科技内容，记录学习心得，分享实用教程与个人作品。
+        </p>
+    </div>
+    <footer>
+        <p style="margin-bottom:10px;">本网站由 Cloudflare 提供保护与支持</p>
+        <p>© 2026 littleliu | IT科技爱好者 版权所有</p>
+    </footer>
+</body>
+</html>
