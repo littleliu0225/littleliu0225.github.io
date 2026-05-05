@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - littleliu | IT科技爱好者</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;font-family: "Microsoft Yahei", sans-serif;}
+        header {background-color: #222;color: white;padding: 15px 20px;display: flex;justify-content: space-between;align-items: center;position: sticky;top: 0;z-index: 99;}
+        .logo {font-size: 24px;font-weight: bold;}
+        nav a {color: white;text-decoration: none;margin-left: 20px;font-size: 16px;}
+        nav a:hover {color: #409eff;}
+        nav a.active {color: #409eff;}
+        .container {width: 90%;max-width: 1200px;margin: 80px auto;text-align: center;}
+        .title {font-size: 32px;margin-bottom: 40px;color: #333;}
+        .contact-info {font-size: 20px; color: #666; line-height: 2.5;}
+        .contact-info p{margin: 15px 0;}
+        footer {background-color: #222;color: #aaa;text-align: center;padding: 30px 0;margin-top: 50px;}
+
+        @media(max-width:768px){
+            header{flex-direction:column;gap:10px;}
+            nav{margin-top:10px;}
+            nav a{margin:0 8px;font-size:14px;}
+            .contact-info{font-size:16px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">littleliu</div>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="about.html">关于我</a>
+            <a href="service.html">分享项目</a>
+            <a href="case.html">作品案例</a>
+            <a href="contact.html" class="active">联系我</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2 class="title">交流与联系</h2>
+        <div class="contact-info">
+            <p>💬 欢迎同好交流技术、分享心得</p>
+            <p>📩 邮箱：service@littleliu016.dpdns.org</p>
+            <p>⏰ 交流时间：有空都会回复</p>
+        </div>
+    </div>
+    <footer>
+        <p style="margin-bottom:10px;">本网站由 Cloudflare 提供保护与支持</p>
+        <p>© 2026 littleliu | IT科技爱好者 版权所有</p>
+    </footer>
+</body>
+</html>
