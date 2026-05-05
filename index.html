@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>littleliu的网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #409eff;
+        }
+
+        /* 轮播/横幅 */
+        .banner {
+            background: linear-gradient(135deg, #409eff, #67c23a);
+            height: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        /* 内容区域 */
+        .container {
+            width: 1200px;
+            margin: 60px auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .about {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .about-text p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .about-img {
+            width: 500px;
+            height: 300px;
+            background-color: #eee;
+            border-radius: 10px;
+        }
+
+        /* 服务区域 */
+        .service {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .service-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px #ddd;
+            flex: 1;
+        }
+
+        .service-item h3 {
+            margin: 15px 0;
+        }
+
+        .service-item p {
+            color: #666;
+        }
+
+        /* 底部 */
+        footer {
+            background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="logo">littleliu的网站</div>
+        <nav>
+            <a href="#">首页</a>
+            <a href="#">关于我们</a>
+            <a href="#">服务</a>
+            <a href="#">案例</a>
+            <a href="#">联系我们</a>
+        </nav>
+    </header>
+
+    <!-- 横幅 -->
+    <section class="banner">
+        <h1>欢迎来到littleliu的网站</h1>
+        <p>简洁、美观、易用的网站主页示例，你可以自由修改文字、颜色、布局和图片。</p>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="container">
+        <h2 class="title">关于我们</h2>
+        <div class="about">
+            <div class="about-text">
+                <h2>专注于简洁高效的网页设计</h2>
+                <p>
+                    本网站采用现代化布局，响应式设计，适合企业、个人、工作室使用。
+                    页面结构清晰，代码规范，便于二次开发和扩展。你可以随意修改颜色、图片、文字内容，打造专属主页。
+                </p>
+            </div>
+            <div class="about-img"></div>
+        </div>
+    </section>
+
+    <!-- 服务 -->
+    <section class="service">
+        <div class="container">
+            <h2 class="title">我们的服务</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>网站建设</h3>
+                    <p>定制化企业官网、个人博客、展示型网站</p>
+                </div>
+                <div class="service-item">
+                    <h3>界面设计</h3>
+                    <p>UI设计、页面美化、交互优化</p>
+                </div>
+                <div class="service-item">
+                    <h3>技术支持</h3>
+                    <p>代码修改、功能开发、网站维护</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer>
+        <p>© 2026 littleliu的网站 版权所有</p>
+    </footer>
+</body>
+</html>
